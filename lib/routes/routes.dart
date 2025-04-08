@@ -38,7 +38,7 @@ class _Home extends RouteClass {
   String home = '/';
   String products = "/products";
   String settings = '/settings';
-  String chat = "/chat";
+  String userInfo = "/user";
   String chatList = "/chatList";
 }
 

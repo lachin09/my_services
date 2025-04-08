@@ -12,9 +12,10 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Modular.setInitialRoute(Routes.home.getModule());
+    Modular.setInitialRoute(Routes.login.getModule());
 
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       routeInformationParser: Modular.routeInformationParser,
       routerDelegate: Modular.routerDelegate,
     );
