@@ -3,7 +3,8 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:my_services/modules/app_module.dart';
 import 'package:my_services/routes/routes.dart';
 import 'package:my_services/themes/theme_provider.dart';
-import 'package:provider/provider.dart'; // <== Добавь этот импорт!
+// ignore: depend_on_referenced_packages
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(
