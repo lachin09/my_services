@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:my_services/modules/home_module/models/user_model.dart';
+import 'package:my_services/modules/home_module/widgets/drawer.dart';
 import 'package:my_services/modules/services/supabase(fake)_services.dart';
 import 'package:my_services/routes/routes.dart';
 
@@ -16,6 +17,22 @@ class HomePage extends StatelessWidget {
     ];
 
     return Scaffold(
+      drawer: drawer,
+      // drawer: Drawer(
+      //   child: Column(
+      //     children: [
+      //       ListTile(
+      //         onTap: () {
+      //           Modular.to.pushNamed(
+      //             Routes.home.getRoute(Routes.home.settings),
+      //           );
+      //         },
+      //         title: Text(' S E T T I N G S'),
+      //         trailing: Icon(Icons.chevron_right),
+      //       ),
+      //     ],
+      //   ),
+      // ),
       appBar: AppBar(title: const Text('M Y   S E R V I C E')),
       body: ListView.builder(
         itemCount: users.length,
